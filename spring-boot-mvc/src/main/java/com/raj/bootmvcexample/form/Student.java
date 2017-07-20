@@ -8,7 +8,6 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
 import javax.validation.constraints.Size;
 
-import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.format.annotation.DateTimeFormat;
 
@@ -20,7 +19,7 @@ public class Student {
 	@Size(min=2, max=30) 
     private String name;
      
-    @NotEmpty @Email
+    @NotEmpty 
     private String email;
      
     @NotNull @Min(18) @Max(100)
